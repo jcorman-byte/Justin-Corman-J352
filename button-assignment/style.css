@@ -1,7 +1,41 @@
-.red-button {
-    background-color: red;
-    color: white;
-    font-size: 30px;
+/*
+MY COLOR PALETTE
+Color 1 - #78c0e0
+Color 2 - #449dd1
+Color 3 - #150578
+Color 4 - #0e0e52
+Color 5 - #3943b7
+*/
+
+body {
+    background-color: #78c0e0;
+    text-align:center;
+}
+
+.button {
+    background-color: #150578;
+    color: #449dd1;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    width: 150px;
+    padding:10px;
+    margin-top:50px;
+    font-size: 20px;
     border: none;
-    width: 200px;
+ 
+    
+}
+button:hover {
+    color: #3943b7
+    
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+}
+
+h2{
+    
+   font-family: "Raleway", sans-serif;
+    font-weight:200;
 }
