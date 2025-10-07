@@ -9,7 +9,7 @@ Color 5 - #3943b7
 
 body {
     background-color: #78c0e0;
-    text-align:center;
+    text-align: center;
 }
 
 .button {
@@ -18,24 +18,20 @@ body {
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     width: 150px;
-    padding:10px;
-    margin-top:50px;
+    padding: 10px;
+    margin-top: 50px;
     font-size: 20px;
     border: none;
- 
-    
 }
 button:hover {
-    color: #3943b7
-    
+    color: #3943b7;
 }
 
 h1 {
     font-family: "Raleway", sans-serif;
 }
 
-h2{
-    
-   font-family: "Raleway", sans-serif;
-    font-weight:200;
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
 }
