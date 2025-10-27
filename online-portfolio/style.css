@@ -1,0 +1,45 @@
+img {
+    width: 100%;
+}
+
+@media screen {
+    img {
+        width: 400px;
+        margin: 80px 0px 0px 0px;
+        border: 10px solid black;
+    }
+
+    h1 {
+        font-family: "Bricolage Grotesque", sands-serif;
+        font-weight: 998;
+        font-size: 60px;
+        color: black;
+    }
+
+    h2 {
+        font-family: "Verdana, Geneva, Tahoma", sans-serif;
+        text-transform: uppercase;
+        color: #6dc9ff;
+    }
+
+    button {
+        background-color: #6dc9ff;
+        border: none;
+        border-radius: 500px;
+        color: white;
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 20px auto 20px auto;
+    }
+
+    button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    button:hover {
+        background-color: black;
+    }
+}
