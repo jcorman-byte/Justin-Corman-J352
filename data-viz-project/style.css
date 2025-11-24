@@ -1,0 +1,111 @@
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Article container */
+#article {
+  max-width: 900px;
+  margin: 2rem auto 4rem auto;
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+/* Headings and meta text */
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold; /* NEW */
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 1rem;
+  font-weight: bold; /* NEW */
+}
+
+#byline {
+  font-size: 0.95rem;
+  color: #777;
+  font-weight: bold; /* NEW */
+}
+#date {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+#date {
+  margin-bottom: 1.5rem;
+}
+
+/* Paragraph text */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Chart sections */
+.chart-block {
+  margin: 2.5rem 0;
+}
+
+.chart-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.chart-deck {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+/* Flourish embeds */
+.flourish-embed {
+  width: 100%;
+}
+
+/* Figure and caption */
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+/* Links (for your ESPN sources) */
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #0a58ca;
+  text-decoration: none;
+}
+
+/* Make sure it looks good on phones */
+@media (max-width: 576px) {
+  #article {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
