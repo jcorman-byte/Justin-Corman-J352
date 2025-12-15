@@ -1,0 +1,278 @@
+/* MOBILE-FIRST BASE STYLES */
+@media screen {
+  :root {
+    --bg-color: #05060a;
+    --card-bg: #0f1118;
+    --accent: #12d0ff;
+    --accent-soft: rgba(18, 208, 255, 0.16);
+    --text-main: #f5f5f7;
+    --text-muted: #b4b6c3;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family:
+      "Source Sans 3",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    background: var(--bg-color);
+    color: var(--text-main);
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  /* TOPPER / HERO */
+
+  #topper {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    background-image: url("robot-praying.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-main);
+  }
+
+  #topper .overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(18, 208, 255, 0.45), transparent 55%),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95));
+    z-index: 1;
+  }
+
+  #topper .topper-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  .kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.7 rem;
+  }
+
+  h2 {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .byline {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .byline .adapted {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+
+  .pub-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  /* MAIN CONTENT LAYOUT */
+
+  #content {
+    padding: 2.5rem 1.25rem 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #content p {
+    margin: 0 0 1.1rem;
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+    font-weight: 400;
+  }
+
+  .section-heading {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1.2rem;
+    margin: 2.25rem 0 0.75rem;
+  }
+
+  .section-subheading {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1rem;
+    margin: 1.75rem 0 0.5rem;
+  }
+
+  .source-note {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 2rem;
+  }
+
+  /* PULL QUOTE */
+
+  .pull-quote {
+    border-left: 4px solid var(--accent);
+    padding: 1.2rem 1.3rem;
+    margin: 2rem 0;
+    background: var(--accent-soft);
+  }
+
+  .pull-text {
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+
+  .pull-attrib {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+  }
+
+  /* PHOTOS & CAPTIONS */
+
+  .story-photo {
+    margin: 2rem 0;
+    background: var(--card-bg);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+  }
+
+  .story-photo img {
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .story-photo figcaption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.6rem;
+  }
+
+  /* FLOURISH EMBEDS */
+
+  .flourish-embed {
+    margin: 1.5rem 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .viz-caption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+  }
+
+  /* FOOTER */
+
+  .page-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.5rem 1.25rem 2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .page-footer p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* TABLET STYLES: ≥ 576px */
+
+@media (min-width: 576px) {
+  #topper {
+    min-height: 80vh;
+    padding: 4rem 2.5rem;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    max-width: 32rem;
+  }
+
+  #content {
+    padding: 3rem 1.5rem 3.5rem;
+  }
+
+  #content p {
+    font-size: 1.02rem;
+  }
+
+  .pull-quote {
+    margin: 2.5rem 0;
+  }
+}
+
+/* DESKTOP STYLES: ≥ 992px */
+
+@media (min-width: 992px) {
+  #topper {
+    min-height: 90vh;
+    padding: 5rem 4rem;
+    background-position: center right;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  #content {
+    padding: 3.5rem 0 4rem;
+  }
+
+  #content p {
+    font-size: 1.05rem;
+  }
+
+  .pull-quote {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
